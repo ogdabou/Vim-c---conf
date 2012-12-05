@@ -1,0 +1,33 @@
+[submodule "bundle/clang_complete"]
+	path = bundle/clang_complete
+	url = https://github.com/Rip-Rip/clang_complete.git
+[submodule "bundle/spertab"]
+	path = bundle/spertab
+	url = https://github.com/ervandew/supertab
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim.git
+[submodule "bundle/autoclose"]
+	path = bundle/autoclose
+	url = https://github.com/Townk/vim-autoclose.git
+[submodule "bundle/dwm"]
+	path = bundle/dwm
+	url = https://github.com/ogdabou/dwm.vim.git
+[submodule "bundle/showinvis"]
+	path = bundle/showinvis
+	url = https://github.com/vim-scripts/cream-showinvisibles.git
+[submodule "bundle/doxygenToolkit"]
+	path = bundle/doxygenToolkit
+	url = https://github.com/vim-scripts/DoxygenToolkit.vim.git
+[submodule "bundle/witespaces"]
+	path = bundle/witespaces
+	url = https://github.com/bronson/vim-trailing-whitespace.git
+[submodule "bundle/indent-guide"]
+	path = bundle/indent-guide
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/headergates"]
+	path = bundle/headergates
+	url = https://github.com/vim-scripts/headerGatesAdd.vim.git
