@@ -1,6 +1,6 @@
-**C++ Configuration**  
+<h1>**C++ Configuration**  </h1>
 
-**Requierement**  
+<h2>**Requierement**  </h2>
 This section only apply on your laptop  
 Epita's racks already have you needs to  
 install this conf.  
