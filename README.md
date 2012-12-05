@@ -1,4 +1,4 @@
-<title>**C++ Configuration**  </title>
+**C++ Configuration**  
 
 **Requierement**  
 This section only apply on your laptop  
