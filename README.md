@@ -1,4 +1,15 @@
 <h1> Configuration </h1>
+<h2> How to install ? </h2>
+cd ~/.vim  
+git clone https://github.com/ogdabou/Vim-c---conf.git  
+cd Vim-c---conf  
+git submodule init  
+git submodule update  
+cd ..  
+mv Vim-c---conf/\* Vim-c---conf/.\* .  
+rm -rf Vim-c---conf  
+ln -s ~/.vim/.vimrc ~/.vimrc    If doesn't work, supress your vimrc file  
+
 
 <h2>Requierement</h2>
 This section only apply on your laptop  
