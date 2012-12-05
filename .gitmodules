@@ -28,6 +28,6 @@
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
-[submodule "bundle/headergates"]
-	path = bundle/headergates
-	url = https://github.com/vim-scripts/headerGatesAdd.vim.git
+#[submodule "bundle/headergates"]
+#	path = bundle/headergates
+#	url = https://github.com/vim-scripts/headerGatesAdd.vim.git
