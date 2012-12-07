@@ -21,18 +21,21 @@ let Tlist_File_Fold_Auto_Close=1
 let Tlist_Close_On_Select=1
 let Tlist_Process_File_Always=1
 
+
 """"""""""""""""""""""""""""""""""""
 ""           HEADER GATES
 """"""""""""""""""""""""""""""""""""
 let  g:HeaderGatesAdd_suffix="_HH_"
 
+
 """"""""""""""""""""""""""""""""""""
-""            CLANG
+""        CLANG COMPILATION
 """"""""""""""""""""""""""""""""""""
 nnoremap <silent> <F3> :call g:ClangUpdateQuickFix()<CR>
 let g:clang_user_options='|| exit 0'
 let g:clang_complete_auto = 1
 let g:clang_complete_copen = 1
+
 
 """"""""""""""""""""""""""""""""""""
 ""            DOXYGEN
@@ -48,9 +51,25 @@ let g:DoxygenToolkit_startCommentBlock="/** "
 let g:DoxygenToolkit_interCommentTag="** "
 let g:DoxygenToolkit_startCommentTag="/**"
 
+
+""""""""""""""""""""""""""""""""""""
+""        G++ COMPILATION
+""""""""""""""""""""""""""""""""""""
+nnoremap <F2> :call MakeCpp() <CR> <CR>
+nnoremap <C-a> :copen <CR>
+nnoremap a :cclose <CR>
+nnoremap <C-x> :!./%< <CR>
+
+function! MakeCpp ()
+    set makeprg=g++\ -Wall\ -Werror\ -Wextra\ -W\ -std=c++0x\ %\ -o\ %<
+    make
+    set makeprg=make
+endfunction
+
+
 """"""""""""""""""""""""""""""""""""
 ""        ADDITIONAL MAPING
 """"""""""""""""""""""""""""""""""""
 nnoremap <silent> <C-w> :update <CR> :FixWhitespace <CR> :update <CR>
 nnoremap <silent> <C-f> :nohlsearch <CR>
-
+nnoremap <F5> :!g++ -W -Werror -Wall -Wextra -o
